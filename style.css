@@ -19,8 +19,8 @@
   /* Typography */
   --font-size-base: 0.9375rem; /* ~15px */
   --font-size-xs: 0.813rem; /* ~13px */
-  --fs-h1: clamp(1.2rem, 4vw + 0.5rem, 2rem);     /* min ~23px, max ~32px */
-  --fs-h2: clamp(1.3rem, 4vw + 0.3rem, 1.95rem);  /* min ~20px, max ~30px */
+  --fs-h1: clamp(1.2rem, 4vw + 0.5rem, 2.25rem);     /* min ~23px, max ~36px */
+  --fs-h2: clamp(1.3rem, 4vw + 0.3rem, 2.188rem);  /* min ~20px, max ~34px */
   --fs-h3: clamp(1rem, 2vw + 0.2rem, 1.35rem);   /* min ~16px, max ~24px */
 
   /* Font Weights */
@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100dvh;
+    height: 100lvh;
   }
 
   h1 {
@@ -74,7 +74,7 @@
 @layer utilities {
   header {
     text-align: center;
-    margin-block: 4rem;
+    margin-block: 5rem 4rem;
     width: min(90%, 33.5rem);
   }
 
@@ -102,7 +102,7 @@
     
     &.team-builder {
       border-color: var(--color-red);
-      grid-column-start: 2;/
+      grid-column-start: 2;
     }
 
     &.karma {
